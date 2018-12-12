@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW4</title>
+  <script scr="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="drinkContainer">
+        <button class="drinkButton">아메리카노, 3000원, 3분</button>
+        <button class="drinkButton">카페라떼, 4000원, 4분</button>
+        <button class="drinkButton">초코라떼, 4000원, 5분</button>
+        <button class="drinkButton">카푸치노, 4500원, 6분</button>
+        <button class="drinkButton">다방커피, 5000원, 10분</button>
+      </div>
+      <div class="numberContainer">
+        <button>-</button>
+        <div>{{number}}</div>
+        <button>+</button>
+      </div>
+      <div class="stateContainer">
+        
+      </div>
+    </div>
+  </div>
+  <script src="./HW4.js"></script>
+  <script>
+    let vm = new Vue({
+      el: '#app',
+      data(){
+        return{
+          number:1,
+          orders:[]
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
