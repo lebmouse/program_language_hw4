@@ -26,17 +26,31 @@ const enum customerDiscount {
   Youth = 0.7
 }
 
-// 메뉴 클래스
+/*
+
+  음료수 종류(Drink)와 수(number)로 이루어진
+  Menu 클래스
+
+*/
 class Menu {
   constructor(private Drink: Drink, private number: number) {}
   getDrink(): Drink {
     return this.Drink;
+  }
+  setDrink(drink : Drink):void{
+    this.Drink = drink;
   }
   getNumber(): number {
     return this.number;
   }
 }
 
+
+/*
+
+  주문들, 고객유형
+
+*/
 class Customer {
   protected orders: Array<Menu>;
   protected type: number;
